@@ -1,0 +1,42 @@
+# Tue, 17 Dec 13 16:30:18 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+app.descr=Chat Online é um programa de código aberto para suporte ao vivo.
+# Tue, 17 Dec 13 16:30:43 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+app.title=Atendimento Online
+# Tue, 17 Dec 13 16:31:23 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+chat.window.title.agent=Atendimento Online
+# Tue, 17 Dec 13 16:31:52 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+chat.window.title.user=Ponto Card Chat
+# Tue, 17 Dec 13 16:32:36 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+presurvey.submit=Iniciar Chat
+# Tue, 17 Dec 13 18:09:17 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+chat.window.poweredreftext=pontocardce.com.br
+# Tue, 17 Dec 13 18:10:02 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+chat.window.product_name=Ponto <span class="grey">Card Chat</span>
+# Tue, 17 Dec 13 18:11:27 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+mail.user.history.body=Olá, {0}!\n\nSeu histórico do chat: \n\n{1}\n--- \nObrigado,\nPonto Card Chat
+# Tue, 17 Dec 13 18:11:51 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+mail.user.history.subject=Ponto Card Chat: Histórico de conversa
+# Tue, 17 Dec 13 18:12:23 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+page.chat.old_browser.problem=<p>Seu navegador não é totalmente suportado pelo Chat Ponto Card.\nPor favor, use um dos seguintes navegadores:</p>
+# Tue, 17 Dec 13 18:13:04 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+resetpwd.intro=Por favor escolha uma senha para usar com a sua conta.
+# Tue, 17 Dec 13 18:13:17 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+resetpwd.title=Mude sua senha.
+# Tue, 17 Dec 13 18:13:53 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+restore.mailsubj=Redefina sua senha.
+# Tue, 17 Dec 13 18:14:27 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+restore.mailtext=Olá, {0}\n\nPor favor clique no link abaixo ou copie e cole o URL em seu navegador:\n{1}\n\nDesta forma, você poderá escolher uma nova senha. \n\nPonto Card Chat.
+# Tue, 17 Dec 13 18:14:51 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+site.title=pontocardce.com.br
+# Tue, 17 Dec 13 18:15:26 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+site.url=http://pontocardce.com.br
+# Thu, 19 Dec 13 10:56:58 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+agent.not_logged_in=Sua sessão expirou, por favor faça novamente o login
+# Thu, 19 Dec 13 10:57:41 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+canned.descr=Editar mensagens que você digita na frequência no chat.
+# Thu, 19 Dec 13 10:58:05 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+canned.descr=Editar mensagens que você digita com frequência no chat.
+# Thu, 19 Dec 13 11:02:33 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+clients.intro=Esta página contém a lista de visitantes em espera.
+# Thu, 19 Dec 13 11:03:10 -0200 by 177.19.82.163 using Mozilla/5.0 (Windows NT 6.2) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/31.0.1650.63 Safari/537.36
+company.title=Atendimento Ponto Card
