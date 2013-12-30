@@ -30,7 +30,7 @@
 		<title>Acessórios Relógio Ponto - Cartões Cartográficos - Fitas Relógio Ponto - Chapeiras - Bobinas - Ponto Card - Fortaleza - Ceará</title>
 	</head>
 	<body class="fitVids">
-		<a onclick="promocao();" href="javascript:void(0);">
+		<a id="promo-button" onclick="promocao();" href="javascript:void(0);">
 			<marquee class="botao-promocao" behavior="alternate" scrollamount="5">
 				CLIQUE AQUI PARA VER A PROMO&Ccedil;&Atilde;O DO M&Ecirc;S!
 			</marquee>
@@ -42,7 +42,7 @@
 		</div>
 		<div class="container clearfix">
 			<br/><br/><br/>
-			<div id="top-bar">
+			<div id="top-bar" class="cursor-default">
 				<div class="col_half col_last tright" valign="middle">
 					<p>Bem vindo !!! Temos as melhores soluções em Controle de Ponto e Acesso !</p>
 				</div>
@@ -50,11 +50,11 @@
 			<div id="header" class="clearfix">
 				<div id="logo">
 					<a href="index.html">
-						<img src="images/logo.png" title="PontoCard" />
+						<img src="images/logo.png" />
 					</a>
 				</div>
 				<div id="top-contacts-area">
-					<ul id="top-contacts">
+					<ul id="top-contacts" class="cursor-default">
 						<li><span>Fone</span><span style="font-size: 12px">85 3226-2933</li>
 						<li><span>Email</span><span style="font-size: 12px">comercial@pontocardce.com.br</span></li>
 						<li>
@@ -275,9 +275,9 @@
 			</div>
 			<div id="footer" class="clearfix">
 				<div id="footer-widget-area" class="clearfix">
-					<div class="col_one_fourth">
+					<div id="footer-esquerda" class="col_one_fourth cursor-default">
 						<p>
-							<img src="images/footer-logo.png" title="PontoCard" /><br/>
+							<img src="images/footer-logo.png" /><br/>
 							PONTOCARD - Soluções Tecnológicas em Controle de Ponto e Acesso.
 						</p>
 						<div class="wcontact-info-icon">
@@ -298,9 +298,9 @@
 						</div>
 						<br/>
 						<p>
-						<img src="images/revenda-ouro-topdata.png" title="PontoCard" />       
+						<img src="images/revenda-ouro-topdata.png" />       
 					</div>
-					<div class="col_one_fourth">
+					<div id="footer-meio" class="col_one_fourth">
 						<div class="widget widget_meta clearfix">
 							<h4>LINHA DE PRODUTOS</h4>
 							<ul>
@@ -317,7 +317,8 @@
 								<li><a href="hamster-dx-leitor-biometrico.html">Hamster DX</a></li>
 								<li><a href="softwares.html">Softwares</a></li>
 							</ul>
-						</div><br/>
+						</div>
+						<br/>
 					</div>
 					<div class="col_one_fourth">
 						<div class="widget contact-form-widget clearfix">
@@ -334,7 +335,7 @@
 								</p>
 								<p>
 									<label for="widget-contactform-email">Assunto</label>
-									<input type="text" id="assunto" name="assunto" />
+									<input type="text" id="assunto" name="assunto" class="required" />
 								</p>
 								<p>
 									<label for="widget-contactform-message">Mensagem</label>
@@ -360,9 +361,9 @@
 					</div>
 				</div>
 			</div>
-			<div id="copyrights" class="clearfix">
+			<div id="copyrights" class="clearfix cursor-default">
 				<div id="foo-left">
-					Copyrights &copy; 2007-2012 | PontoCard - Todos os direitos reservados.<br/>
+					Copyrights &copy; 2007-2013 | PontoCard - Todos os direitos reservados.<br/>
 					Criação: <a href="http://boomerangpublicidade.com.br" target="_blank">Boomerang Publicidade</a> | Tecnologia: XHTML | CSS | jQuery | JavaScript
 				</div>
 				<div id="foo-right">
