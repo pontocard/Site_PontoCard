@@ -1,16 +1,17 @@
 function promocao(){
 	window.open('promocao-mes.html','okno','width=600,height=510,status=no,toolbar=no,menubar=no,scrollbars=auto,resizable=yes');
 }
+// REQUISIÇÃO AJAX
 function pagina(){
 	$.ajax({ // Copia #top-bar e #header
-		url:'acessorios.html',
+		url:'index.html',
 		success:function(copia){
 			copia=$(copia).find('div#top-bar,div#header');
 			$('#itens-copiados-topo').html(copia);
 		}
 	});
 	$.ajax({ // copia #footer-esquerda e #footer-meio
-		url:'acessorios.html',
+		url:'index.html',
 		success:function(copia2){
 			copia2=$(copia2).find('div#footer-esquerda,div#footer-meio');
 			$('#itens-copiados-footer').html(copia2);
@@ -20,14 +21,14 @@ function pagina(){
 		}
 	});
 	$.ajax({ // copia #copyrights
-		url:'acessorios.html',
+		url:'index.html',
 		success:function(copia3){
 			copia3=$(copia3).find('div#copyrights');
 			$('#direitos-autorais').html(copia3);
 		}
 	});
 	$.ajax({ // copia marquee
-		url:'acessorios.html',
+		url:'index.html',
 		success:function(copia4){
 			copia4=$(copia4).find('marquee');
 			$('#promo-button').html(copia4);

@@ -35,8 +35,12 @@
 		<link rel="shortcut icon" href="favicon.png" />
 		<title>Ponto Card - Soluções Tecnológicas em Controle de Ponto e Acesso - Fortaleza - Ceará</title>
 	</head>
-	<body class="fitVids" onload="pagina()">
-		<a id="promo-button" onclick="promocao();" href="javascript:void(0);"></a> <!-- Copiado de "acessorios.html" -->
+	<body class="fitVids">
+		<a id="promo-button" onclick="promocao();" href="javascript:void(0);">
+			<marquee class="botao-promocao" behavior="alternate" scrollamount="5">
+				CLIQUE AQUI PARA VER A PROMO&Ccedil;&Atilde;O DO M&Ecirc;S!
+			</marquee>
+		</a>
 		<div class="chat_button">
 			<a href="/chat/client.php?locale=pt-br&amp;style=default" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open(&#039;/chat/client.php?locale=pt-br&amp;style=default&amp;url=&#039;+escape(document.location.href)+&#039;&amp;referrer=&#039;+escape(document.referrer), 'mibew', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;">
 				<img src="/chat/b.php?i=mgreen&amp;lang=pt-br" border="0" width="224" height="152" />
@@ -44,7 +48,31 @@
 		</div>
 		<div class="container clearfix">
 			<br/><br/><br/>
-			<div id="itens-copiados-topo"></div> <!-- Copiado de "acessorios.html" -->
+			<div id="top-bar" class="cursor-default">
+				<div class="col_half col_last tright" valign="middle">
+					<p>Bem vindo !!! Temos as melhores soluções em Controle de Ponto e Acesso !</p>
+				</div>
+			</div>
+			<div id="header" class="clearfix">
+				<div id="logo">
+					<a href="index.html">
+						<img src="images/logo.png" />
+					</a>
+				</div>
+				<div id="top-contacts-area">
+					<ul id="top-contacts" class="cursor-default">
+						<li><span>Fone</span><span style="font-size: 12px">85 3226-2933</li>
+						<li><span>Email</span><span style="font-size: 12px">comercial@pontocardce.com.br</span></li>
+						<li>
+							<a href="http://www.facebook.com/pages/PONTO-CARD/485733848131976" title="Facebook" target="_blank" class="ntip">
+								<img src="images/icons/social/facebook.png" />
+							</a>
+						</li>
+					</ul>
+					<div class="clear"></div>
+				</div>
+				<div align="right"><img src="images/topdata-revenda-ouro.png" width="250" height="59"></div>
+			</div>
 			<div id="primary-menu">
 				<ul>
 					<li class="current"><a class="menu-home" title="Home" href="index.html"></a></li>
@@ -61,7 +89,6 @@
 							<li><a href="controle-de-ronda.html">Controle de Ronda</a></li>
 							<li><a href="crachas.html">Crachás</a></li>
 							<li><a href="fechaduras-eletricas.html">Fechaduras Elétricas</a></li>
-							<li><a href="hamster-dx-leitor-biometrico.html">Hamster DX</a></li>
 							<li><a href="softwares.html">Softwares</a></li>
 						</ul>
 					</li>
@@ -439,12 +466,13 @@
 							<div id="home-client-scroller">
 								<h4>Cases</h4>
 								<div class="home-client-list clearfix">
-									<div id="home-client-list"><a href="#" target="_blank"><img src="images/clients/350.jpg" alt="Coelce" title="Client 1" class="imgfade" /></a>
-										<a target="_blank"><img src="images/clients/477.jpg" alt="Client 2" title="Docas do Ceará" class="imgfade" /></a>
-										<a target="_blank"><img src="images/clients/860.jpg" alt="Client 3" title="CAFAZ" class="imgfade" /></a>
-										<a target="_blank"><img src="images/clients/933.jpg" alt="Client 4" title="Marquise" class="imgfade" /></a>
-										<a target="_blank"><img src="images/clients/1478.png" alt="Client 5" title="Marcosa" class="imgfade" /></a>
-										<a target="_blank"><img src="images/clients/1850.png" alt="Client 6" title="Tozzi do Brasil" class="imgfade" /></a>
+									<div id="home-client-list">
+										<a target="_blank"><img src="images/clients/350.jpg" title="Coelce" class="imgfade" /></a>
+										<a target="_blank"><img src="images/clients/477.jpg" title="Docas do Ceará" class="imgfade" /></a>
+										<a target="_blank"><img src="images/clients/860.jpg" title="CAFAZ" class="imgfade" /></a>
+										<a target="_blank"><img src="images/clients/933.jpg" title="Marquise" class="imgfade" /></a>
+										<a target="_blank"><img src="images/clients/1478.png" title="Marcosa" class="imgfade" /></a>
+										<a target="_blank"><img src="images/clients/1850.png" title="Tozzi do Brasil" class="imgfade" /></a>
 									</div>
 									<div id="clients-arrow-up"></div>
 									<div id="clients-arrow-down"></div>
@@ -470,7 +498,50 @@
 			</div>
 			<div id="footer" class="clearfix">
 				<div id="footer-widget-area" class="clearfix">
-					<div id="itens-copiados-footer"></div> <!-- Copiado de "acessorios.html" -->
+					<div id="footer-esquerda" class="col_one_fourth cursor-default">
+						<p>
+							<img src="images/footer-logo.png" /><br/>
+							PONTOCARD - Soluções Tecnológicas em Controle de Ponto e Acesso.
+						</p>
+						<div class="wcontact-info-icon">
+							<img src="images/icons/features/light/signpost.png" title="Nosso Endereço" />
+							Rua São Paulo, 32 - Salas 307-310 Centro Fortaleza - Ceará
+						</div>
+						<div class="wcontact-info-icon">
+							<img src="images/icons/features/light/telephone4.png" title="Nosso Telefone" />
+							(85) 3226-2933
+						</div>
+						<div class="wcontact-info-icon">
+							<img src="images/icons/features/light/iphone4.png" title="Nosso Celular" />
+							(85) 8761-3226
+						</div>
+						<div class="wcontact-info-icon">
+							<img src="images/icons/features/light/mail.png" title="Nosso E-mail" />
+							comercial@pontocardce.com.br
+						</div>
+						<br/>
+						<p>
+						<img src="images/revenda-ouro-topdata.png" />       
+					</div>
+					<div id="footer-meio" class="col_one_fourth">
+						<div class="widget widget_meta clearfix">
+							<h4>LINHA DE PRODUTOS</h4>
+							<ul>
+								<li><a href="acessorios.html">Acessórios</a></li>
+								<li><a href="automacao-comercial.html">Automação Comercial</a></li>
+								<li><a href="cancelas.html">Cancelas Automáticas</a></li>
+								<li><a href="catracas.html">Catracas</a></li>
+								<li><a href="cftv-sistemas-de-seguranca.html">CFTV</a></li>
+								<li><a href="controle-de-acesso.html">Controle de Acesso</a></li>
+								<li><a href="controle-de-ponto.html">Controle de Ponto</a></li>
+								<li><a href="controle-de-ronda.html">Controle de Ronda</a></li>
+								<li><a href="crachas.html">Crachás</a></li>
+								<li><a href="fechaduras-eletricas.html">Fechaduras Elétricas</a></li>
+								<li><a href="softwares.html">Softwares</a></li>
+							</ul>
+						</div>
+						<br/>
+					</div>
 					<div class="col_one_fourth">
 						<div class="widget contact-form-widget clearfix">
 							<h4>Fale Conosco</h4>
@@ -512,7 +583,18 @@
 					</div>
 				</div>
 			</div>
-			<div id="direitos-autorais"></div> <!-- Copiado de "acessorios.html" -->
+			<div id="copyrights" class="clearfix cursor-default">
+				<div id="foo-left">
+					Copyrights &copy; 2007-2013 | PontoCard - Todos os direitos reservados.<br/>
+					Criação: <a href="http://boomerangpublicidade.com.br" target="_blank">Boomerang Publicidade</a> | Edição: <a href="http://fb.com/thiago.jourdan" target="_blank">Thiago Jourdan</a>
+				</div>
+				<div id="foo-right">
+					<a href="index.html">Home</a>|
+					<a href="faqs.html">Dúvidas Frequentes</a>|
+					<a href="sitemap.html">Mapa do Site</a><br/>
+					<a>Tecnologia: XHTML | CSS | jQuery | JavaScript</a>
+				</div>
+			</div>
 		</div>
 		<a id="gotoTop" title="Go to Top">Go to Top</a>
 		<script src="js/custom.js"></script>
