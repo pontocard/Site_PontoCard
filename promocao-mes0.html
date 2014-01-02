@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="iso-8859-1" />
+		<title>Promoção PontoCard</title>
+		<link rel="shortcut icon" href="favicon.png" />
+		<style>
+		*{outline:none;}
+		body{
+			background:#DED;
+			color:#222;
+			cursor:default;
+			overflow:yes;}
+		button{
+			font-size:bold;
+			padding:20px 80px;
+			color:#222;
+			cursor:pointer;
+			font-size:16pt;
+			font-weight:bold;
+			border:1px solid #222;
+			border-radius:3px;
+			box-shadow:0 0 5px #0A0;
+			transition:0.5s;
+			-webkit-transition:0.5s;
+			background:linear-gradient(#080,#0A0,#080);
+			-pie-background:linear-gradient(#080,#0A0,#080);
+			behavior:url(pie.htc);}
+		button:hover{
+			transition:0.5s;
+			-webkit-transition:0.5s;
+			box-shadow:0 0 10px #00A;}
+		th{
+			padding:5px 0;
+			border-radius:4px;
+			background:linear-gradient(#080,#0A0,#080);
+			-pie-background:linear-gradient(#080,#0A0,#080);
+			behavior:url(pie.htc);}
+		.borda{
+			color:#222;
+			border:4px solid #222;
+			padding:2px;
+			border-radius:3px;
+			behavior:url(pie.htc);}
+		.nome{
+			font-weight:bold;
+			font-size:16pt;}
+		.campo{
+			color:#222;
+			border:none;
+			border-radius:3px;
+			padding:4px;
+			resize:none;
+			transition:0.5s;
+			-webkit-transition:0.5s;
+			behavior:url(pie.htc);}
+		.campo:focus{
+			transition:0.5s;
+			-webkit-transition:0.5s;
+			box-shadow:0 0 6px #029;
+			behavior:url(pie.htc);}
+		.campo:hover{
+			transition:0.5s;
+			-webkit-transition:0.5s;
+			box-shadow:0 0 6px #092;
+			behavior:url(pie.htc);}
+		.subtitulo{
+			font-weight:bold;
+			text-decoration:underline;
+			background:yellow;
+			padding:2px;
+			border-radius:3px;
+			behavior:url(pie.htc);}
+		.titulo{
+			font-weight:bold;
+			font-size:20pt;
+			background:linear-gradient(#080,#0A0,#080);
+			-pie-background:linear-gradient(#080,#0A0,#080);
+			padding:5px;
+			border-radius:4px;
+			behavior:url(pie.htc);}
+		</style>
+	</head>
+	<body>
+		<div align="center">
+			<b><p><span class="titulo" valign="middle">Desculpe, a promoção acabou. :/<!--[IF lte IE 10]>&nbsp;&nbsp;<![endif]--></span></p>
+			<p><span class="subtitulo">MAS NÃO SE PREOCUPE!</span></p>
+			<p><span class="borda">Já estamos planejando uma promoção IMPERDÍVEL, que vai ser lançada em breve!<!--[IF lte IE 10]>&nbsp;&nbsp;<![endif]--></span></p>
+		</div>
+		<p>Enquanto a nossa promoção não é lançada, solicite uma visita dos nossos vendedores e conheça melhor os nossos produtos.</p></b>
+		<div>
+			<div id="widget-contactform-result" style="display:none;"></div>
+			<form action="form.php" method="post" align="center">
+				<table>
+					<th colspan=4 border=1>Preencha o formulário para entrarmos em contato</th>
+					<tr>
+						<td style="padding-top:10px;"><label>Nome: </label></td>
+						<td style="padding-top:10px;"><input type="text" class="campo" /></td>
+						<td style="padding-top:10px;" cellpadding><label>Mensagem: </label></td>
+						<td style="padding-top:10px;" rowspan=3><textarea rows="10" cols="30" class="campo"></textarea></td>
+					</tr>
+					<tr>
+						<td><label>E-mail: </label></td>
+						<td><input type="text" class="campo" /></td>
+					</tr>
+					<tr valign="top">
+						<td><label>Assunto: </label></td>
+						<td><input type="text" class="campo" /></td>
+					</tr>
+				</table>
+				<button class="button" type="submit">Enviar Mensagem</button>
+			</form>
+		</div>
+	</body>
+</html>

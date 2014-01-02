@@ -1,5 +1,5 @@
 function promocao(){
-	window.open('promocao-mes.html','okno','width=600,height=510,status=no,toolbar=no,menubar=no,scrollbars=auto,resizable=yes');
+	window.open('promocao-mes0.html',"",'width=700,height=510,status=no,toolbar=no,scrollbars=auto');
 }
 // REQUISIÇÃO AJAX
 function pagina(){
