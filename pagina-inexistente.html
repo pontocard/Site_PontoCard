@@ -6,31 +6,66 @@
 		<link href="http://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Droid+Serif:400,400italic" rel="stylesheet" />
 		<link href="http://fonts.googleapis.com/css?family=Droid+Sans:400,700" rel="stylesheet" />
-		<link rel="stylesheet" href="style.css" />
-		<link rel="stylesheet" href="css/colors.php.css" />
-		<link rel="stylesheet" href="css/tipsy.css" />
-		<link rel="stylesheet" href="images/fancybox/jquery.fancybox.css" />
-		<link rel="stylesheet" href="css/responsive.css" />
+		<link rel="stylesheet" href="/style.css" />
+		<link rel="stylesheet" href="/css/colors.php.css" />
+		<link rel="stylesheet" href="/css/tipsy.css" />
+		<link rel="stylesheet" href="/images/fancybox/jquery.fancybox.css" />
+		<link rel="stylesheet" href="/css/responsive.css" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 		<!--[IF lte IE 9]><script src="http://css3-mediaqueries-js.googlecode.com/svn/trunk/css3-mediaqueries.js"></script><![endif]-->
-		<script src="js/jquery.js"></script>
-		<script src="js/jquery.easing.js"></script>
-		<script src="js/superfish.js"></script>
-		<script src="js/jquery.fitvids.js"></script>
-		<script src="js/jquery.mobilemenu.js"></script>
-		<script src="js/jquery.tipsy.js"></script>
-		<script src="js/jquery.carouFredSel.js"></script>
-		<script src="js/jquery.touchwipe.js"></script>
-		<script src="js/jquery.fancybox.js"></script>
-		<script src="js/ajax-validate.js"></script>
-		<script src="js/jquery.form.js"></script>
-		<script src="js/jquery.uniform.js"></script>
-		<script src="js/javascript.js"></script>
-		<link rel="shortcut icon" href="favicon.png" />
+		<script src="/js/jquery.js"></script>
+		<script src="/js/jquery.easing.js"></script>
+		<script src="/js/superfish.js"></script>
+		<script src="/js/jquery.fitvids.js"></script>
+		<script src="/js/jquery.mobilemenu.js"></script>
+		<script src="/js/jquery.tipsy.js"></script>
+		<script src="/js/jquery.carouFredSel.js"></script>
+		<script src="/js/jquery.touchwipe.js"></script>
+		<script src="/js/jquery.fancybox.js"></script>
+		<script src="/js/ajax-validate.js"></script>
+		<script src="/js/jquery.form.js"></script>
+		<script src="/js/jquery.uniform.js"></script>
+		<script src="/js/javascript.js"></script>
+		<link rel="shortcut icon" href="/favicon.png" />
 		<title>Ops... Página não encontrada!</title>
+<script>		
+	function pagina2(){
+		$.ajax({ // Copia #top-bar e #header
+			url:'/index.html',
+			success:function(copia){
+				copia=$(copia).find('div#top-bar,div#header');
+				$('#itens-copiados-topo').html(copia);
+			}
+		});
+		$.ajax({ // copia #footer-esquerda e #footer-meio
+			url:'/index.html',
+			success:function(copia2){
+				copia2=$(copia2).find('div#footer-esquerda,div#footer-meio');
+				$('#itens-copiados-footer').html(copia2);
+			},
+			error:function(){
+				alert('Pedimos desculpas, mas os componentes da página não foram carregados totalmente. Por favor, atualize a página.');
+			}
+		});
+		$.ajax({ // copia #copyrights
+			url:'/index.html',
+			success:function(copia3){
+				copia3=$(copia3).find('div#copyrights');
+				$('#direitos-autorais').html(copia3);
+			}
+		});
+		$.ajax({ // copia marquee
+			url:'/index.html',
+			success:function(copia4){
+				copia4=$(copia4).find('#letreiro-promo');
+				$('#promo-button').html(copia4);
+			}
+		});
+	}
+</script>
 	</head>
 	<body class="fitVids">
-		<script>pagina();</script>
+		<script>pagina2();</script>
 		<a id="promo-button" onclick="promocao();" href="javascript:void(0);"></a> <!-- Copiado de "index.html" -->
 		<div class="chat_button">
 			<a href="/chat/client.php?locale=pt-br&amp;style=default" target="_blank" onclick="if(navigator.userAgent.toLowerCase().indexOf('opera') != -1 &amp;&amp; window.event.preventDefault) window.event.preventDefault();this.newWindow = window.open(&#039;/chat/client.php?locale=pt-br&amp;style=default&amp;url=&#039;+escape(document.location.href)+&#039;&amp;referrer=&#039;+escape(document.referrer), 'mibew', 'toolbar=0,scrollbars=0,location=0,status=1,menubar=0,width=640,height=480,resizable=1');this.newWindow.focus();this.newWindow.opener=window;return false;">
@@ -40,28 +75,98 @@
 		<div class="container clearfix">
 			<br/><br/><br/>
 			<div id="itens-copiados-topo"></div> <!-- Copiado de "index.html" -->
+			<div id="primary-menu">
+				<ul>
+					<li><a class="menu-home" title="Home" href="/index.html"></a></li>
+					<li><a href="/empresa.html">Empresa<span>Institucional</span></a></li>
+					<li class="cursor-default"><a>Produtos<span>Nossa Linha</span></a>
+						<ul>
+							<li><a href="/acessorios.html">Acessórios</a></li>
+							<li><a href="/automacao-comercial.html">Automação Comercial</a></li>
+							<li><a href="/cancelas.html">Cancelas Automáticas</a></li>
+							<li><a href="/catracas.html">Catracas</a></li>
+							<li><a href="/cftv-sistemas-de-seguranca.html">CFTV</a></li>
+							<li><a href="/controle-de-acesso.html">Controle de Acesso</a></li>
+							<li><a href="/controle-de-ponto.html">Controle de Ponto</a></li>
+							<li><a href="/controle-de-ronda.html">Controle de Ronda</a></li>
+							<li><a href="/crachas.html">Crachás</a></li>
+							<li><a href="/fechaduras-eletricas.html">Fechaduras Elétricas</a></li>
+							<li><a href="/softwares.html">Softwares</a></li>
+						</ul>
+					</li>
+					<li><a href="/servicos.html">Serviços<span>O que fazemos</span></a></li>
+					<li><a href="/cases.html">Cases<span>Casos de  Sucesso</span></a></li>
+					<li><a href="/faqs.html">FAQ's<span>Perguntas Frequentes</span></a></li>
+					<li><a href="/localizacao.html">Localização<span>Onde Estamos</span></a></li>
+					<li><a href="/contato.html">Contato<span>Fale Conosco</span></a></li>
+				</ul>
+			</div>
 			<div id="content" class="clearfix">
 				<div id="page-title" class="clearfix">
-					<h1>Esta página que você tentou acessar não existe!</h1>
+					<h1>Talvez esta página que você tentou acessar não exista mais.</h1>
 				</div>
 				<div id="content-wrap" class="clearfix">
 					<div class="content-wrapper clearfix">
-						<div class="error404page">Talvez você deva retornar à uma dessas páginas:</div>
+						<div class="error404page">Atualize a página ou retorne à uma dessas:</div>
 					</div>
 					<ul class="redirect404">
-						<li><a href="index.html">Home</a></li>
-						<li><a href="servicos.html">Serviços</a></li>
-						<li><a href="faqs.html">Dúvidas Frequentes</a></li>
-						<li><a href="contato.html">Contato</a></li>
+						<li><a href="/index.html">Home</a></li>
+						<li><a href="/servicos.html">Serviços</a></li>
+						<li><a href="/faqs.html">Dúvidas Frequentes</a></li>
+						<li><a href="/contato.html">Contato</a></li>
 					</ul>
 				</div>
 				<br/>
 				<div id="tweet-feed"></div>
 			</div>
+			<div id="footer" class="clearfix">
+				<div id="footer-widget-area" class="clearfix">
+					<div id="itens-copiados-footer"></div> <!-- Copiado de "index.html" -->
+					<div class="col_one_fourth">
+						<div class="widget contact-form-widget clearfix">
+							<h4>Fale Conosco</h4>
+							<div id="widget-contactform-result" style="display:none;"></div>
+							<form class="nobottommargin" id="widget-contactform" name="widget-contactform" action="form.php" method="post">
+								<p>
+									<label for="widget-contactform-name">Nome</label>
+									<input type="text" id="nome" name="nome" class="required" />
+								</p>
+								<p>
+									<label for="widget-contactform-email">E-mail</label>
+									<input type="text" id="email" name="email" class="required email" />
+								</p>
+								<p>
+									<label for="widget-contactform-email">Assunto</label>
+									<input type="text" id="assunto" name="assunto"  class="required" />
+								</p>
+								<p>
+									<label for="widget-contactform-message">Mensagem</label>
+									<textarea id="mensagem" name="mensagem" rows="10" cols="30" class="required"></textarea>
+								</p>
+								<p>
+									<button class="button" type="submit" id="widget-contactform-submit" name="widget-contactform-submit"><span>Enviar Mensagem</span></button>
+								</p>
+							</form>
+							<script>
+								$("#widget-contactform")
+								.validate({submitHandler:function(a){
+									$(a).ajaxSubmit({
+										target:"#widget-contactform-result",
+										success:function(){
+											$("#widget-contactform").fadeOut(500,function(){$("#widget-contactform-result").fadeIn(500)})
+										},
+										error:function(){$("#widget-contactform-result").fadeIn(500);}
+									});
+								}});
+							</script>
+						</div>
+					</div>
+				</div>
+			</div>
 			<div id="direitos-autorais"></div> <!-- Copiado de "index.html" -->
 		</div>
 		<a id="gotoTop" title="Topo">Topo</a>
-		<script src="js/custom.js"></script>
+		<script src="/js/custom.js"></script>
 		<script>
 			var _gaq=_gaq || [];
 			var pluginUrl='//www.google-analytics.com/plugins/ga/inpage_linkid.js';

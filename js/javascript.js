@@ -30,7 +30,7 @@ function pagina(){
 	$.ajax({ // copia marquee
 		url:'index.html',
 		success:function(copia4){
-			copia4=$(copia4).find('marquee');
+			copia4=$(copia4).find('#letreiro-promo');
 			$('#promo-button').html(copia4);
 		}
 	});
